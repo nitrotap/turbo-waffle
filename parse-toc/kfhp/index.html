@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table of Contents</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the table container */
+        .table-container {
+            margin: 20px auto;
+            max-width: 80vw;
+            overflow-x: auto;
+        }
+
+        /* Style the table */
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* Style the table header row */
+        .table-header {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            display: flex;
+
+        }
+
+        /* Style the table data rows */
+        .table-row {
+            border-bottom: 1px solid #ddd;
+            display: flex;
+        }
+
+        /* Style the table data cells */
+        .table-cell-plan {
+            padding: 12px;
+            text-align: left;
+            width: 20%;
+            max-height: 50vw;
+            overflow-y: auto;
+        }
+
+        .table-cell-location {
+            padding: 12px;
+            text-align: left;
+            width: 80%;
+        }
+
+        /* Style the search box */
+        .search-box {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 12px;
+            width: 100%;
+        }
+    </style>
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <div class="search-box">
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input" name="search-input">
+        <button id="search-button">Search</button>
+        <div class="result-counter"></div>
+
+    </div>
+    <div class="table-container">
+        <div class="table-header">
+            <div class="table-cell-plan">Plan Name</div>
+            <div class="table-cell-location">Location</div>
+        </div>
+        <div class="table-content">
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

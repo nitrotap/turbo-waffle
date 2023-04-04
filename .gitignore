@@ -1,3 +1,7 @@
+# User Defined Ignores
+*.json
+
+
 # Logs
 logs
 *.log
